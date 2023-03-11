@@ -1,5 +1,6 @@
 # lambda-error-reporter
-Small project designed to inform a user should an error occur in one of their Lambdas.
+The Lambda Error Reporter is a small tool which monitors cloudwatch logs and inform users should an error occur in one of their applications logging 
+to cloudwatch.
 
 
 ## Current limitations
