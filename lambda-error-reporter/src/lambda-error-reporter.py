@@ -56,6 +56,7 @@ def publish_message(loggroup, logstream, error_msg, lambda_func_name):
             Subject=f'Execution error for Lambda - {lambda_func_name[3]}',
             Message=message
         )
+        logger.info("Message successfully published.")
     except ClientError as e:
         logger.error("An error occurred: %s" % e)
 
