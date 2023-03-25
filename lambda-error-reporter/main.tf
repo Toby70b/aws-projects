@@ -9,9 +9,9 @@ module "lambda_function" {
   environment_variables = {
     SNS_TOPIC_ARN = module.sns_topic.topic_arn
   }
-  handler     = "lambda-error-reporter.lambda_handler"
+  handler     = "${local.lambda_file_name}.lambda_handler"
   runtime     = "python3.8"
-  source_path = "../src/lambda-error-reporter.py"
+  source_path = "./src/${local.lambda_file_name}.py"
 
   tags        = local.common_tags
 }

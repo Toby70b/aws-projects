@@ -20,4 +20,4 @@
 # .hcl files from Terraform v0.14 and newer
 *.hcl
 
-/lambda-error-reporter/tf/builds/
+/lambda-error-reporter/builds/

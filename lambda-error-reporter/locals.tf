@@ -3,4 +3,5 @@ locals {
     project   = "lambda-error-reporter"
     terraform = "true"
   }
+  lambda_file_name = "lambda_error_reporter"
 }
