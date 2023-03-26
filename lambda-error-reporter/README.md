@@ -6,7 +6,7 @@ I created this as I'm often not monitoring the results of my Lambdas or other re
 The raw error log or stack trace was also not very readable, so I needed a Lambda to format it for easier readability.
 
 ## Diagram
-![](./images/lambda-error-fomatter architecture.png)
+![lambda-error-fomatter architecture](https://user-images.githubusercontent.com/35812795/227777655-d6b53228-448b-474d-858c-742a164bc451.png)
 
 ## Current limitations
 As the Lambda which is formatting the error before publishing to SNS is currently triggered by Cloudwatch logs, it is restricted to Cloudwatch logs within the same region as the Lambda. 
